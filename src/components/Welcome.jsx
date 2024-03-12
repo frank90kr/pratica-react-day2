@@ -8,11 +8,8 @@ function Welcome() {
   return (
     <>
       <Alert show={show} variant="success">
-        <Alert.Heading>Benvenuto su EpiBooks!</Alert.Heading>
-        <p>
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
-          consectetur purus sit amet fermentum.
-        </p>
+        <Alert.Heading className="text-center fs-2">Benvenuto su EpiBooks!</Alert.Heading>
+        <p></p>
         <hr />
         <div className="d-flex justify-content-end">
           <Button onClick={() => setShow(false)} variant="outline-success">
