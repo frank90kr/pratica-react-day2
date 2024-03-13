@@ -24,7 +24,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Container } from "react-bootstrap";
 import { Component } from "react";
-import items from "./data/fantasy.json";
+import items from "../data/fantasy.json";
 
 class BookList extends Component {
   state = {
@@ -33,7 +33,7 @@ class BookList extends Component {
   render() {
     return (
       <Container>
-        <h1 className="text-center">Romance Books</h1>
+        <h1 className="text-center">Shop</h1>
         <Button onClick={() => this.setState({ categoria: items })}>cliccami qui!!</Button>
         <Row>
           {this.state.categoria.map((book) => (
@@ -46,8 +46,8 @@ class BookList extends Component {
                   </Card.Title>
                   <Card.Text className="d-flex">{book.price}</Card.Text>
 
-                  <Button onClick={() => this.setState({ selected: true })} variant="success opacity-75">
-                    Go somewhere
+                  <Button onClick={() => this.setState({ selected: true })} variant="dark">
+                    Acquista
                   </Button>
                 </Card.Body>
               </Card>
